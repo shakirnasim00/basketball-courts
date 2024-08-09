@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Courts</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+ <!-- Nav Bar -->
+ <nav id = "desktop-nav">
+    <ul class="nav-links">
+
+            <div class="dropdown">
+            <li class="li-dropdown"><a href="./">Gyms</a></li>
+            <div class="dropdown-content">
+                <a href="#">PISE</a>
+                <a href="#">Naden</a>
+                <a href="#">Carsa</a>
+                <a href="#">Royal Roads</a>
+            </div>
+            </div>
+
+        <div class="dropdown">
+            <li class="li-dropdown"><a href="./">Outdoor</a></li>
+            <div class="dropdown-content">
+                <a href="#">Crystal Pool</a>
+                <a href="#">JDF</a>
+                <a href="#">Vic West</a>
+                <a href="#">Panorama</a>
+            </div>
+            </div>
+
+        <li><a href="./">Contact</a></li>
+    </ul>
+</nav>
+<!-- Mobile Nav Bar -->
+<nav id="hamburger-nav"></nav>
+
+<section class = "body-container">
+
+ <!-- Body Section -->
+    <div id="main-heading-container">
+    <h1>Basketball in Victoria, BC</h1>
+    <p>Find the best and most available local outdoor and indoor basketball courts and  in Victoria. </p> <br>
+    <button onclick="goToMap()">See the map <i class="fa-solid fa-map-location-dot"></i></button>  
+    </div>
+ 
+</section>
+
+<section class = "map-container">
+    
+
+    <iframe id="map-iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1vC-sB2HDevYVaBn9CCGOri1kGhbfP1w&ehbc=2E312F&noprof=1" 
+     width="400" height="800"></iframe>
+   
+   </section>
+
+<div class="legend">
+    <div class="legend-box">
+        <div id="orange-box"></div>
+    <p>  = Outdoor</p>
+    </div>
+    <div class="legend-box">
+        <div id="red-box"></div>
+        <p>  = Indoor</p>
+        </div>
+</div>
+
+<section class="gyms-container">
+
+    <h1 id="courts-label">Courts</h1>
+
+<button id="indoor-button" onclick="indoorClicked()"><h1>Indoor</h1></button> 
+
+<button id="outdoor-button" onclick="outdoorClicked()"><h1>Outdoor</h1></button>
+
+<div class="gym-parent">
+
+    <div class="gym-rectangle">
+
+        <div class="gym-rectangle-container">
+
+            <div class="gym-rectangle-img">
+            <img src="./resources/pise-gym.jpg" height="100px" width="120px" alt="">
+            </div>
+
+            <div class="gym-rectangle-text">
+            <h2>PISE</h2>
+            <p>4371 Interurban Rd, Victoria, BC V9E 2C5</p>
+            <p>★★★★★</p>
+            </div>
+        <hr>
+        </div>
+
+        <div class="gym-rectangle-container">
+
+            <div class="gym-rectangle-img">
+            <img src="./resources/naden.jpeg" height="100px" width="120px" alt="">
+            </div>
+
+            <div class="gym-rectangle-text">
+            <h2>Naden</h2>
+            <p>88 Frewer St, Victoria, BC V9A 6N7</p>
+            <p>★★★★★</p>
+            </div>
+        <hr>
+        </div>
+
+        <div class="gym-rectangle-container">
+
+            <div class="gym-rectangle-img">
+            <img src="./resources/Carsa-gym.jpg" height="100px" width="120px" alt="">
+            </div>
+
+            <div class="gym-rectangle-text">
+            <h2>Carsa</h2>
+            <p>Gabriola Rd, Saanich, BC V8P 5C2</p>
+            <p>★★★★</p>
+            </div>
+        <hr>
+        </div>
+
+        <div class="gym-rectangle-container">
+
+            <div class="gym-rectangle-img">
+            <img src="./resources/royal-roads-court.jpg" height="100px" width="120px" alt="">
+            </div>
+
+            <div class="gym-rectangle-text">
+            <h2>Royal Roads</h2>
+            <p>2005 Sooke Rd, Victoria, BC V9B 5Y2</p>
+            <p>★★★</p>
+            </div>
+       
+        </div>
+    </div>
+
+</div>
+</section>
+
+<footer>
+
+</footer>
+
+
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/5ba1b3077f.js" crossorigin="anonymous"></script>
+</body>
+</html>

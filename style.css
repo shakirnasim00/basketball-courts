@@ -1,0 +1,267 @@
+/* General CSS for Home Page */
+
+* {
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: fit-content;
+    background-image: linear-gradient(rgba(78, 54, 10, 0.303),rgba(78, 49, 10, 0.316)), url(./resources/hoop-sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAV SECTION */
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+    float: right;
+}
+nav, .nav-links {
+    display: flex;
+    
+}
+
+.nav-links {
+    gap: 3.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+
+}
+
+a {
+color: rgb(255, 255, 255);
+text-decoration-color: white;
+text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-color: rgb(181,181,181);
+    transition: ease-in 0.5s;
+}
+
+.nav-links li {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.li-dropdown a {
+   
+        display: flex; /* Use flexbox for its children */
+        align-items: center; /* Align items vertically center */
+}
+
+.dropdown-content {
+    display: none;
+  position: absolute;
+  background: #00000000;
+  color: #fff;
+  padding: 10px 0px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    cursor: pointer;
+  }
+
+/* BODY SECTION */
+.body-container {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+
+#main-heading-container {
+    margin-top: 15%;
+    color: #fff;
+    max-width: 620px;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+#main-heading-container h1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    line-height: 85px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 20px; /* Capsule shape */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 400; 
+    text-align: center; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover { 
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: rgb(244, 244, 244);
+    border: 1px solid  rgb(153, 153, 153);
+}
+
+/* Map Page */
+
+#map-iframe {
+        border: 2px solid #000000; /* Border width and color */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth effect */
+        width: 90%; /* Adjust width as needed */
+        height: 700px; /* Adjust height as needed */
+    
+}
+
+.map-container {
+        display: flex;
+        width: 100%;
+        /* min-height: 100vh; */
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+}
+
+.legend {
+    color: white;
+    display: inline-flex;
+    margin-left: 5%;
+    margin-top: 5px;
+
+}
+
+.legend-box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+#orange-box {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(245,124,0);
+    border: 1px solid white;
+    margin-right: 5px;
+}
+
+#red-box {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(194,24,91);
+    border: 1px solid white;
+    margin-right: 5px;
+}
+
+#courts-label {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gyms-container {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#indoor-button {
+    background-color: #000000;
+    color: white;
+}
+
+#outdoor-button {
+    background-color: white;
+    color: #000;
+}
+
+.gym-parent {
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    height: 100vh;
+
+}
+
+.gym-parent h2,.gym-parent p {
+    text-align: left;
+}
+
+.gym-rectangle {
+    display: inline;
+    flex-direction: column;
+    background-color: rgba(159, 159, 159, 0.385);
+    color: rgb(255, 255, 255);
+    height: 600px;
+    width: 60%;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+    text-wrap: wrap;
+}
+.gym-rectangle-img {
+    float: left;
+    width: 120px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.gym-rectangle-img img {
+    display: flex; /* Apply flexbox layout to the container */
+    align-items: center; /* Center items vertically if needed */
+    justify-content: center; /* Center items horizontally if needed */
+    border-radius: 10px; /* Apply border-radius to the container */
+    overflow: hidden; /* Ensure image stays within rounded corners */
+}
+
+.gym-rectangle-text {
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 140px;
+}
+
+.gym-rectangler-container {
+    align-items: center;
+    justify-content: center;
+}
