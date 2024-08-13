@@ -261,7 +261,57 @@ button:hover {
     padding-left: 140px;
 }
 
+
 .gym-rectangler-container {
     align-items: center;
     justify-content: center;
+}
+
+/* Gym Page(s) CSS */
+
+.gym-body-container {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gym-page-rectangle {
+    color: white;
+    height: 800px;
+    width: 60%;
+    background-color: #ffffff4f;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+.gym-page-title {
+    margin-left: 25%;
+    margin-top: 5px;
+    
+}
+
+.gym-page-image-container img {
+    border-radius: 5% 5% 5% 5%;
+    margin-left: 2.5%;
+}
+
+.gym-page-address {
+    margin-left: 10%;
+}
+
+.gym-page-address a:hover {
+    text-decoration: underline;
+
+}
+
+.gym-page-hours {
+    float: right;
+    margin-right: 10%;
+}
+
+.gym-page-hours p {
+    margin-top: 10px;
 }
