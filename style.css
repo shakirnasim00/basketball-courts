@@ -281,14 +281,17 @@ button:hover {
 
 .gym-page-rectangle {
     color: white;
-    height: 800px;
+    height: 725px;
     width: 60%;
     background-color: #ffffff4f;
     border-radius: 5%;
-    margin-top: 5%;
+    margin-top: 2.0%;
+    margin-bottom: 2.5%;
 }
 .gym-page-title {
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
     margin-top: 5px;
     
 }
@@ -299,6 +302,7 @@ button:hover {
 }
 
 .gym-page-address {
+    margin-top: 4px;
     margin-left: 10%;
 }
 
@@ -307,11 +311,40 @@ button:hover {
 
 }
 
+.gym-page-rating {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 2px;
+}
+
+.checked {
+    color: orange;
+  }
+
 .gym-page-hours {
     float: right;
     margin-right: 10%;
 }
 
 .gym-page-hours p {
-    margin-top: 10px;
+    margin-top: 1rem;
+}
+
+.gym-page-information {
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+
+.gym-page-information p {
+    margin-top: 1rem;
+
+}
+
+.gym-page-button {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
 }
