@@ -68,3 +68,7 @@ function outdoorClicked() {
             image4.src = './resources/panorama.png';
    
 }
+
+function goToReview() {
+    window.location.href = "./review.html"
+}
