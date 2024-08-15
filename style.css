@@ -143,7 +143,7 @@ button:hover {
     border: 1px solid  rgb(153, 153, 153);
 }
 
-/* Map Page */
+/* MAP SECTION */
 
 #map-iframe {
         border: 2px solid #000000; /* Border width and color */
@@ -193,7 +193,7 @@ button:hover {
     border: 1px solid white;
     margin-right: 5px;
 }
-
+/* COURTS SECTION */
 #courts-label {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -347,4 +347,112 @@ button:hover {
     margin-top: 10%;
     justify-content: center;
     align-items: center;
+}
+
+/* Review Page CSS */
+
+.review-body-container {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 1rem;
+    border: none;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    border: none; /* Ensures no border is applied */
+    margin: 0;    /* Ensures no margin is applied */
+    padding: 0;   /* Ensures no padding is applied */
+    outline: none;
+    font-size: 1rem;
+}
+
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;   
+}
+
+ /* Stick at Wall test*/
+
+ form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset.rating {
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+fieldset.rating label {
+    color: gray;
+    cursor: pointer;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+input[type="radio"]:checked ~ label ~ label {
+    color: gold;
+}
+
+button.review {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.review:hover {
+    background-color: #0056b3;
 }

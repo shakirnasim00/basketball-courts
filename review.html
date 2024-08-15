@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Courts</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+ <!-- Nav Bar -->
+ <nav id = "desktop-nav">
+    <ul class="nav-links">
+
+        <li><a href="./index.html">Home</a></li>
+
+            <div class="dropdown">
+            
+            <li class="li-dropdown"><a href="./">Gyms</a></li>
+            <div class="dropdown-content">
+                <a href="./pise.html">PISE</a>
+                <a href="./naden.html">Naden</a>
+                <a href="./carsa.html">Carsa</a>
+                <a href="./royal-roads.html">Royal Roads</a>
+            </div>
+            </div>
+
+        <div class="dropdown">
+            <li class="li-dropdown"><a href="./">Outdoor</a></li>
+            <div class="dropdown-content">
+                <a href="./cp.html">Crystal Pool</a>
+                <a href="./jdf.html">JDF</a>
+                <a href="./vic-west.html">Vic West</a>
+                <a href="./panorama.html">Panorama</a>
+            </div>
+            </div>
+
+        <li><a href="./">Review</a></li>
+    </ul>
+</nav>
+<!-- Mobile Nav Bar -->
+<nav id="hamburger-nav"></nav>
+
+<section class = "review-body-container">
+    <form action="" method="post">
+
+        <label for="name">Name</label>
+       <input type="text" id="name" name="">
+
+       <label for="rating">Court</label>
+       <select id="rating" name="rating">
+            <option value="Pise">PISE</option>
+            <option value="Naden">Naden</option>
+            <option value="Carsa">Carsa</option>
+            <option value="Royal Roads">Royal Roads</option>
+
+            <option value="Crystal Pool">Crystal Pool</option>
+            <option value="Vic West">Vic West</option>
+            <option value="JDF">JDF</option>
+            <option value="Panorama">Panorama</option>
+         
+        </select>
+
+       <label for="rating">Rate the court</label>
+        <fieldset class="rating" id="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">★</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">★</label>
+        </fieldset>
+
+        <textarea name="comments" id="comments" rows="5" cols="30" placeholder="How was your experience..."></textarea>
+
+        <button class="review" type="submit">Submit</button>
+
+    </form>
+    
+</section>
+
+<footer>
+
+</footer>
+
+
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/5ba1b3077f.js" crossorigin="anonymous"></script>
+</body>
+</html>
