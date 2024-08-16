@@ -3,7 +3,17 @@ let indoor_btn = document.getElementById('indoor-button');
 
 
 function goToMap() {
-    window.location.href = "./index.html#map-iframe";
+    const mapContainer = document.querySelector('.map-container');
+    if (mapContainer) {
+        mapContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function goToCourts() {
+    const gymContainer = document.querySelector('.gyms-container');
+    if (gymContainer) {
+        gymContainer.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 new google.maps.Map(document.getElementById("map-iframe"), {

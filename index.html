@@ -12,8 +12,14 @@
  <nav id = "desktop-nav">
     <ul class="nav-links">
 
+        <div class="home-section"><a href="./index.html">Home</a> </div>
+
+
             <div class="dropdown">
-            <li class="li-dropdown"><a href="./">Gyms</a></li>
+                
+            <li class="li-dropdown">
+                
+                <a href="./">Gyms</a></li>
             <div class="dropdown-content">
                 
                 <a href="./pise.html">PISE</a>
@@ -32,6 +38,7 @@
                 <a href="./panorama.html">Panorama</a>
             </div>
             </div>
+       
 
         <li><a href="./review.html">Review</a></li>
     </ul>
@@ -44,20 +51,19 @@
  <!-- Body Section -->
     <div id="main-heading-container">
     <h1>Basketball in Victoria, BC</h1>
-    <p>Find the best and most available local outdoor and indoor basketball courts and  in Victoria. </p> <br>
-    <button onclick="goToMap()">See the map <i class="fa-solid fa-map-location-dot"></i></button>  
+    <p>Find the best and most available local indoor and outdoor basketball courts in Victoria. </p> <br>
+    <button class="home" onclick="goToMap()">View the Map <i class="fa-solid fa-map-location-dot"></i></button>  
     </div>
  
 </section>
 
 <section class = "map-container">
-    
+    <h1 id="maps-label">Map</h1>
 
     <iframe id="map-iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1vC-sB2HDevYVaBn9CCGOri1kGhbfP1w&ehbc=2E312F&noprof=1" 
      width="400" height="800"></iframe>
-   
-   </section>
-
+    
+    </section>
 <div class="legend">
     <div class="legend-box">
         <div id="orange-box"></div>
@@ -67,6 +73,10 @@
         <div id="red-box"></div>
         <p>  = Indoor</p>
         </div>
+</div>
+
+<div class="arrow">
+    </a><img src="./resources/arrow.png" alt="" height="40" onclick="goToCourts()">
 </div>
 
 <section class="gyms-container">

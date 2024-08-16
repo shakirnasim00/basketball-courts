@@ -43,9 +43,10 @@
 <nav id="hamburger-nav"></nav>
 
 <section class = "review-body-container">
-    <form action="" method="post">
+    <form action="https://api.web3forms.com/submit" method="POST">
+       <input type="hidden" name="access_key" value="3169ae38-5e70-4618-bb19-ce6ab9bf7033">
 
-        <label for="name">Name</label>
+       <label for="name">Name</label>
        <input type="text" id="name" name="">
 
        <label for="rating">Court</label>
@@ -79,6 +80,7 @@
         <textarea name="comments" id="comments" rows="5" cols="30" placeholder="How was your experience..."></textarea>
 
         <button class="review" type="submit">Submit</button>
+        <button class="review-reset" type="reset">Reset</button>
 
     </form>
     

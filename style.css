@@ -105,7 +105,7 @@ text-decoration: none;
 }
 
 #main-heading-container {
-    margin-top: 15%;
+    margin-top: 10%;
     color: #fff;
     max-width: 620px;
     text-align: left;
@@ -143,8 +143,33 @@ button:hover {
     border: 1px solid  rgb(153, 153, 153);
 }
 
+button.home {
+    display: inline-block;
+    padding: 15px 30px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 40px; /* Capsule shape */
+    background-color: rgb(69, 68, 68);
+    color: #dcdcdc;
+    font-size: 1.3rem; /* Adjust font size */
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.home:hover { 
+    cursor: pointer;
+    background-color: rgb(30, 30, 30);
+    color: #dcdcdc;
+    border: 1px solid  rgb(255, 255, 255);
+}
 /* MAP SECTION */
 
+#maps-label {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 #map-iframe {
         border: 2px solid #000000; /* Border width and color */
         border-radius: 8px; /* Rounded corners */
@@ -156,6 +181,7 @@ button:hover {
 
 .map-container {
         display: flex;
+        flex-direction: column;
         width: 100%;
         /* min-height: 100vh; */
         align-items: center;
@@ -163,6 +189,20 @@ button:hover {
         margin-bottom: 0;
 }
 
+.arrow {
+    color: white;
+    float: right;
+    margin-right: 2.5%;
+    margin-top: 1%;
+}
+
+.arrow img {
+    filter: invert(100%) brightness(100%);
+}
+
+.arrow img:hover {
+    cursor: pointer;
+}
 .legend {
     color: white;
     display: inline-flex;
@@ -218,8 +258,7 @@ button:hover {
 .gym-parent {
     display: grid;
     place-items: center; /* Center both horizontally and vertically */
-    height: 100vh;
-
+    height: 90vh;
 }
 
 .gym-parent h2,.gym-parent p {
@@ -285,7 +324,7 @@ button:hover {
     width: 60%;
     background-color: #ffffff4f;
     border-radius: 5%;
-    margin-top: 2.0%;
+    margin-top: 2%;
     margin-bottom: 2.5%;
 }
 .gym-page-title {
@@ -293,7 +332,6 @@ button:hover {
     justify-content: center;
     width: 50%;
     margin-top: 5px;
-    
 }
 
 .gym-page-image-container img {
@@ -456,3 +494,17 @@ button.review {
 button.review:hover {
     background-color: #0056b3;
 }
+
+button.review-reset {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #808080;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.review-reset:hover {
+    background-color: #464646;
+}
+
