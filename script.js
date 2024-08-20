@@ -1,5 +1,9 @@
 let outdoor_btn = document.getElementById('outdoor-button');
 let indoor_btn = document.getElementById('indoor-button');
+const gymMenu = document.querySelector(".mobile-dropdown-content-1")
+const outdoorMenu = document.querySelector(".mobile-dropdown-content-2")
+
+displayDate();
 
 
 function goToMap() {
@@ -22,6 +26,36 @@ new google.maps.Map(document.getElementById("map-iframe"), {
     gestureHandling: "none",
     zoomControl: false,
   });
+
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+function MenuShowGyms() {
+    
+
+    if (gymMenu.style.display === 'flex') {
+        gymMenu.style.display = 'none'; //Hides sub-menu
+    } else {
+        gymMenu.style.display = 'flex'; //Shows the sub-menu
+    }  
+    
+    outdoorMenu.style.display = 'none'; //closes other menu
+}
+
+function MenuShowOutdoor() {
+
+    if (outdoorMenu.style.display === 'flex') {
+        outdoorMenu.style.display = 'none'; //Hides sub-menu
+    } else {
+        outdoorMenu.style.display = 'flex'; //Shows the sub-menu
+    }    
+
+    gymMenu.style.display = 'none'; //closes other submenu
+}
 
 
 function indoorClicked() {
@@ -79,6 +113,16 @@ function outdoorClicked() {
    
 }
 
-function goToReview() {
+function goToReview() { 
     window.location.href = "./review.html"
 }
+
+
+function displayDate() { //Displays date on form
+    const today = new Date();
+
+    let formattedDate = today.toLocaleDateString();
+
+    document.getElementById("date").innerHTML = formattedDate;
+
+} 

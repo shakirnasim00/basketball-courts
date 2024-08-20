@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Courts</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -36,11 +37,40 @@
             </div>
             </div>
 
-        <li><a href="./">Review</a></li>
+        <li><a href="./review.html">Review</a></li>
     </ul>
 </nav>
 <!-- Mobile Nav Bar -->
-<nav id="hamburger-nav"></nav>
+<nav id="hamburger-nav">
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick = "toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu-links">
+            <li><a href="./index.html" onclick ="toggleMenu()">Home</a></li>
+
+            <li class="mobile-dropdown"><a href="#" onclick="MenuShowGyms()">Gyms+</a></li>
+            <div class="mobile-dropdown-content-1">
+                <a href="./pise.html">PISE</a>
+                <a href="./naden.html">Naden</a>
+                <a href="./carsa.html">Carsa</a>
+                <a href="./royal-roads.html">Royal Roads</a>
+            </div>
+            <li class="mobile-dropdown"><a href="#" onclick="MenuShowOutdoor()">Outdoor+</a> </li>
+            <div class="mobile-dropdown-content-2">
+                <a href="./cp.html">Crystal Pool</a>
+                <a href="./jdf.html">JDF</a>
+                <a href="./vic-west.html">Vic West</a>
+                <a href="./panorama.html">Panorama</a>
+            </div>
+            <li><a href="./review.html" onclick ="toggleMenu()">Review</a> </li>
+
+        </ul>
+    </div>
+</nav>
 
 <section class = "gym-body-container">
     <div class="gym-page-rectangle">
@@ -66,7 +96,7 @@
         </div>
 
         <div class="gym-page-address">
-        <a href="#"><p>4371 Interurban Rd, Victoria, BC V9E 2C5</p></a>
+        <a href="https://www.google.ca/maps/place/Royal+Roads+University+Recreation+Centre/@48.4321365,-123.4808129,16z/data=!3m2!4b1!5s0x548f0ce87f5d81d9:0xce8eeaa1b74d236a!4m6!3m5!1s0x548f0ce7d5a1468d:0x1f8a916442359d38!8m2!3d48.432133!4d-123.478238!16s%2Fg%2F1jkx9twbt?entry=ttu" target="_blank"><p>2005 Sooke Rd, Victoria, BC V9B 5Y2</p></a>
 
             <div class="gym-page-rating">
                 <span class="fa fa-star checked"></span>
@@ -82,7 +112,18 @@
             <p>Floor Type: Wood</p>
             <p>Number of Hoops: 2</p>
             <p>Backboards: Glass</p>
-            <p>Busy level: Low</p>
+            <p>Court Traffic: Low</p>
+        </div>
+
+        <div class="gym-page-hours-mobile">
+            <h3>Hours of Operation</h3>
+                <p>Monday: 5:00am - 8:00pm</p>
+                <p>Tuesday: 5:00am - 8:00pm</p>
+                <p>Wednesday: 5:00am - 8:00pm</p>
+                <p>Thursday: 5:00am - 8:00pm</p>
+                <p>Friday: 5:00am - 8:00pm</p>
+                <p>Saturday: 8:00am - 4:00pm</p>
+                <p>Sunday: 8:00am - 4:00pm</p>
         </div>
 
         <div class="gym-page-button">
@@ -91,8 +132,39 @@
     </div>
 </section>
 
-<footer>
+<footer class="site-footer">
+    <div class="footer-container">
 
+      <div class="footer-column-1">
+          <h6>About</h6>
+          <p class="text-justify"><a href="./index.html#desktop-nav">HoopsVictoria</a> focuses on providing effective and useful information on basketball courts in the Greater Victoria Area. We wish to highlight the game of basketball in the capital district, and encourage people to get out and play and engage in the basketball community. We are a non for profit organization, any proceeds made are redistributed into maintaining our site to provide the most accurate and up to date information.</p>
+      </div>
+
+      <div class="footer-column-2">
+          <h6>Gyms</h6>
+          <ul class="footer-links">
+            <li><a href="./pise.html">PISE</a></li>
+            <li><a href="./naden.html">Naden</a></li>
+            <li><a href="./carsa.html">Carsa</a></li>
+            <li><a href="./royal-roads.html">Royal Roads</a></li>
+          </ul>
+     </div>
+
+     <div class="footer-column-3">
+          <h6>Outdoor</h6>
+          <ul class="footer-links">
+            <li><a href="./cp.html">Crystal Pool</a></li>
+            <li><a href="./vic-west.html">Vic West</a></li>
+            <li><a href="./jdf.html">JDF</a></li>
+            <li><a href="./panorama.html">Panorama</a></li>
+          </ul>
+      </div>
+
+
+    </div>
+    <hr>
+    <div class="footer-copyright"><p>
+        Copyright © 2024 All Rights Reserved by Shakir Nasim.</p></div>
 </footer>
 
 
