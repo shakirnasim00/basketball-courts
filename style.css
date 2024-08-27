@@ -500,10 +500,15 @@ button.home:hover {
     color: gold;   
 }
 
+#date-label p {
+    color: white;
+}
+
  /* Form CSS*/
 
  form {
-    background-color: #fff;
+    color: white;
+    background-color:#26272bb2;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
